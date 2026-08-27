@@ -325,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-1px);
 }
 
-/* ==================== 2. MAIN NAVBAR & BREATHING SPACE ==================== */
+/* ==================== 2. MAIN NAVBAR ==================== */
 .navbar {
   position: absolute;
   top: 45px;
@@ -335,16 +335,6 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   padding: 18px 0;
   transition: var(--transition);
-}
-
-.navbar.scrolled, .navbar.subpage-navbar {
-  position: fixed;
-  top: 0;
-  background: rgba(10, 18, 30, 0.96);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border-dark);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  padding: 14px 0;
 }
 
 .navbar-inner {
@@ -2047,8 +2037,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
   }
   .navbar-menu {
-    position: fixed;
-    top: 72px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     background: #0A121E;

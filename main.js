@@ -4,19 +4,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---- 1. Navbar Scroll Effect & Back-to-Top ---- */
-  const navbar = document.getElementById('navbar');
+  /* ---- 1. Back-to-Top ---- */
   const backToTop = document.getElementById('backToTop');
 
   window.addEventListener('scroll', () => {
-    if (navbar && !navbar.classList.contains('subpage-navbar')) {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    }
-
     if (backToTop) {
       if (window.scrollY > 400) {
         backToTop.classList.add('visible');
